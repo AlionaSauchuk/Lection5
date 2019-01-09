@@ -1,17 +1,16 @@
 .header{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;    
 }
 
+
+
 .header-left-menu{
-    min-width: 768px;
     height: 90px;
-    width: 100vw;
-    position: fixed;
     display: flex;
-    flex-direction: row;
-    font-weight: 400;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
     z-index: 100;
     top: 0;
     margin: 0;
@@ -20,10 +19,20 @@
 
 .header-left-menu div{
     height: 90px;
-    widows: 50%;
     margin: 10px;
-    padding: 0px 0px 0px 10px;
 }
+
+.header-right-menu{
+    height: 90px;
+    display: flex;
+    z-index: 100;
+    margin-top: 35px;
+    color: rgb(75, 74, 74);
+    background-color: #fff;
+}
+
+
+
 
 img{
     height: 90px;
@@ -41,13 +50,68 @@ button{
     background-color: #fff;
     border: none;
     font-size: 18px;
-    color: blue;
+    color: rgb(75, 74, 74);
     width: 120px;
     height: 25px;
     align-self: center;
 }
 
 button:hover{
-    background-color: blue;
-    color: #fff;
+    color: blue;
 }
+
+
+ul {
+    display: block;
+    list-style: none;
+    align-self: center;
+    font-size: 18px;
+    color: rgb(75, 74, 74);
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu li a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(75, 74, 74);
+    background-color: white;
+    text-decoration: none;
+}
+ul.menu  li  a:hover {
+    color: blue;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    left: 0;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    color: rgb(75, 74, 74);
+    background-color: white;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
