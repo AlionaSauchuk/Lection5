@@ -1,14 +1,14 @@
-.header{
+.header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 
 
-.header-left-menu{
+.header-left-menu {
     height: 90px;
     display: flex;
     z-index: 100;
@@ -17,12 +17,12 @@
     background-color: #fff;
 }
 
-.header-left-menu div{
+.header-left-menu div {
     height: 90px;
     margin: 10px;
 }
 
-.header-right-menu{
+.header-right-menu {
     height: 90px;
     display: flex;
     z-index: 100;
@@ -31,14 +31,11 @@
     background-color: #fff;
 }
 
-
-
-
-img{
+#logo {
     height: 90px;
 }
 
-p{
+.header-text {
     color: #737373;
     display: inline-block;
     border-left: solid 1px #e5e5e5;
@@ -46,7 +43,7 @@ p{
     text-align: left;
 }
 
-button{
+button {
     background-color: #fff;
     border: none;
     font-size: 18px;
@@ -56,7 +53,7 @@ button{
     align-self: center;
 }
 
-button:hover{
+button:hover {
     color: blue;
 }
 
@@ -68,16 +65,19 @@ ul {
     font-size: 18px;
     color: rgb(75, 74, 74);
 }
+
 ul:after {
     display: block;
     content: ' ';
     clear: both;
     float: none;
 }
-ul.menu > li {
+
+ul.menu>li {
     float: left;
     position: relative;
 }
+
 ul.menu li a {
     display: block;
     padding: 10px;
@@ -86,9 +86,11 @@ ul.menu li a {
     background-color: white;
     text-decoration: none;
 }
-ul.menu  li  a:hover {
+
+ul.menu li a:hover {
     color: blue;
 }
+
 ul.submenu {
     display: none;
     position: absolute;
@@ -97,21 +99,99 @@ ul.submenu {
     background-color: white;
     border: 1px solid lightgray;
 }
-ul.submenu > li {
+
+ul.submenu>li {
     display: block;
 }
-ul.submenu > li > a {
+
+ul.submenu>li>a {
     display: block;
     color: rgb(75, 74, 74);
     background-color: white;
     text-decoration: none;
 }
-ul.submenu > li > a:hover {
+
+ul.submenu>li>a:hover {
     text-decoration: none;
     color: blue;
 }
 
-ul.menu > li:hover > ul.submenu {
+ul.menu>li:hover>ul.submenu {
     display: block;
 }
 
+.card {
+    margin: 20px;
+    position: relative;
+    height: 329px;
+}
+
+
+#img {
+    width: 400px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+
+.card-header{
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    width: 400px;
+    height: 214.16px;
+    background-color: rgba(0, 0, 0, .4);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.card-header-text {
+    display:block;
+    position:absolute;
+    top: 10px;
+    left:10px;
+
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.card-bottom{
+    display:block;
+    position:absolute;
+    left:0;
+    bottom: 0;
+    width: 400px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+    background-color: rgba(73, 72, 72, 0.726);
+}
+
+.card-short-text{ 
+    position:relative;
+    top: 0px;
+    left:10px;
+    right: 10px;
+    bottom: 10px;
+
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-try{
+    width: 400px;
+    height: 25px;
+
+    background-color: rgb(54, 53, 53);
+    color: #fff;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.btn-try:hover{
+    background-color: rgb(105, 104, 104);
+    color: #fff;
+}
