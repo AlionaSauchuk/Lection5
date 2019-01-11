@@ -1,9 +1,14 @@
 .header {
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
+    z-index: 100;
+    top:0;
+    left: 0;
+    background-color: #fff;
 }
 
 
@@ -14,21 +19,21 @@
     z-index: 100;
     top: 0;
     margin: 0;
-    background-color: #fff;
+ 
 }
 
-.header-left-menu div {
-    height: 90px;
-    margin: 10px;
-}
 
 .header-right-menu {
     height: 90px;
     display: flex;
-    z-index: 100;
-    margin-top: 35px;
     color: rgb(75, 74, 74);
-    background-color: #fff;
+    z-index: 100;
+    top:0;
+    right:0;
+}
+
+.header-right-menu-items{
+    margin-top: 35px;
 }
 
 #logo {
@@ -63,6 +68,7 @@ ul {
     list-style: none;
     align-self: center;
     font-size: 18px;
+    margin-top: 26px;
     color: rgb(75, 74, 74);
 }
 
@@ -120,17 +126,37 @@ ul.menu>li:hover>ul.submenu {
     display: block;
 }
 
+#container{
+    position: absolute;
+    top:100px;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 50px;
+}
+
+#content{
+    height: 360px;
+    width: 400px;
+}
+
 .card {
-    margin: 20px;
     position: relative;
-    height: 329px;
+    height: 360px;
+    width: 400px;
+    
+    margin-top: 20px;
+
+    background-color: rgb(54, 53, 53);
+    border-radius: 20%;
 }
 
 
 #img {
     width: 400px;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
 
@@ -143,15 +169,15 @@ ul.menu>li:hover>ul.submenu {
     width: 400px;
     height: 214.16px;
     background-color: rgba(0, 0, 0, .4);
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
 .card-header-text {
     display:block;
     position:absolute;
-    top: 10px;
-    left:10px;
+    top: 20px;
+    left:15px;
 
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
@@ -162,12 +188,10 @@ ul.menu>li:hover>ul.submenu {
     display:block;
     position:absolute;
     left:0;
-    bottom: 0;
+    bottom: 10;
     width: 400px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
 
-    background-color: rgba(73, 72, 72, 0.726);
+    background-color: none;
 }
 
 .card-short-text{ 
@@ -182,16 +206,21 @@ ul.menu>li:hover>ul.submenu {
 }
 
 .btn-try{
-    width: 400px;
-    height: 25px;
+    position: relative;
+    top:40;
+    left:0;
 
-    background-color: rgb(54, 53, 53);
+    width: 400px;
+    height: 25;
+
+    background: none;
     color: #fff;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
 }
 
 .btn-try:hover{
-    background-color: rgb(105, 104, 104);
-    color: #fff;
+    color: rgb(142, 128, 182);
+}
+
+.btn-try:focus{
+    border: none;
 }
