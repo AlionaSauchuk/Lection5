@@ -7,6 +7,7 @@ body{
     position: fixed;
     width: 100vw;
     height: 15vh;
+    min-height: 15vh;
     z-index: 100;
     top:0;
     left: 0;
@@ -50,6 +51,7 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
 
+    min-width: 25vw;
     width: 25vw;
     height: 85vh;
     
@@ -64,6 +66,7 @@ body{
     align-content: center;
 
     min-height: 15vh;
+    min-width:25vw;
     width: 25vw;
     height: 15vh;
 
@@ -92,14 +95,16 @@ body{
 
 #chat-ico{
     position: absolute;
-    top:0;
+    top:-5px;
     left: 28vw;
 
+    max-width: 80px;
+    max-height: 80px;
     width: 80px;
     height: 80px;
     margin: 10px;
 
-    border-color:white;
+    background-color: white;
     border-radius: 50%;
 }
 
